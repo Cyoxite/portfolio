@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      Hello ! I'm Daniel Polanski from Poland. I Was born in 1995 and code is my passion.
+      Hi! I'm Daniel Polanski from Poland. I Was born in 1995.
       
     </p>
     
