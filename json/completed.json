@@ -1,0 +1,18 @@
+{
+    "0": {
+        "name": "Project 0",
+        "gallery": "blue",
+        "description": "small"
+    },
+    "1": {
+        "name": "Project 1",
+        "gallery": "red",
+        "description": "medium"
+    },
+    "2": {
+        "name": "Project 2",
+        "gallery": "later",
+        "description": "large"
+    }
+}
+
