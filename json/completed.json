@@ -1,12 +1,33 @@
 {
     "0": {
-        "name": "Project 0",
-        "photo": {
-            "0":{ "link" : "http://via.placeholder.com/350x150"},
-            "1":{ "link" : "http://via.placeholder.com/350x150"},
-            "2":{ "link" : "http://via.placeholder.com/350x150"}
-        },
-        "description": "small"
+        "name": "Finanse panel",
+        "photo": [
+            { "link" : "/images/panel/1.png"},
+            { "link" : "/images/panel/2.png"},
+            { "link" : "/images/panel/3.png"},
+            { "link" : "/images/panel/4.png"},
+            { "link" : "/images/panel/5.png"},
+            { "link" : "/images/panel/6.png"},
+            { "link" : "/images/panel/7.png"},
+            { "link" : "/images/panel/8.png"},
+            { "link" : "/images/panel/9.png"},
+            { "link" : "/images/panel/10.png"},
+            { "link" : "/images/panel/11.png"}
+        ],
+        "description": "Web application created to control small transport business using PHP. Aplication offers: monitoring of incomes and expenses. I develop this app until company shutdown due covid fault. ",
+        "feature":[ 
+        { "featurenm" : "Bugtracker - share problems with other and monitor status of solve"},
+        { "featurenm" : "Incomes monitor by user input and from  worker daily income input"},
+        { "featurenm" : "Outcomes monitor by user input and from gas station"},
+        { "featurenm" : "List of future payments and account numbers"},
+        { "featurenm" : "Monitor of payouts for workers (Company has daily payout)"},
+        { "featurenm" : "Import CSV list of refueling from Gas station"},
+        { "featurenm" : "Business turnover data and charts using google charts API"},
+        { "featurenm" : "Monitor of car insurance (not finished yet)"},
+        { "featurenm" : "Vehicle database for easy control date for review and insurance"},
+        { "featurenm" : "Search by month, year or typed word "}
+        ],
+        "technology": ["PHP8","Mysql","Bootstrap","Javascript"]
     },
     "1": {
         "name": "Project 1",
@@ -20,16 +41,17 @@
             "6":{ "link" : "http://via.placeholder.com/350x150"},
             "7":{ "link" : "http://via.placeholder.com/350x150"}
         },
-        "description": "medium"
-    },
-    "2": {
-        "name": "Project 2",
-        "photo": {
-            "0":{ "link" : "http://via.placeholder.com/350x150"},
-            "1":{ "link" : "http://via.placeholder.com/350x150"},
-            "2":{ "link" : "http://via.placeholder.com/350x150"}
-        },
-        "description": "large"
+        "description": "medium",
+        "feature": [ 
+            { "featurenm" : "Feature1"}
+            
+    
+            ]            ,
+        "technology": [
+            "PHP8",
+            "Mysql",
+            "Bootstrap",
+            "Javascript"]
     }
 }
 
