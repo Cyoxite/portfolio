@@ -1,8 +1,8 @@
 <template>
     
 
-<div class="completed" v-bind:key="completed.id" >
-<h2> {{completed.name}} <button @click=getbuttontext>{{buttontext}}</button> </h2>
+<div @click=getbuttontext class="completed" v-bind:key="completed.id" >
+<h2> {{completed.name}}<arrow  :class="{ 'down': toggle, 'up': !toggle  }"> </arrow> </h2>
 <transition name="fade">
         <div class="Show" v-show='!toggle'>
 
@@ -89,6 +89,7 @@ export default {
     border-radius: 10px;
     margin-bottom: 10px;
     box-shadow: 10px 5px 5px black;
+    
 }
 
 
@@ -152,4 +153,25 @@ h4{
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
+arrow {
+     border: solid black;
+     border-width: 0 4px 4px 0;
+     display: inline-block;
+     margin-left: 10px;
+     padding: 6px;
+     
+}
+.completed:hover arrow{
+  border:solid cyan;
+  border-width: 0 4px 4px 0;  
+}
+ .down {
+     transform: rotate(45deg);
+     transition: transform 1s ease-in-out;
+}
+ .up {
+     transform: rotate(-135deg);
+     transition: transform 1s ease-in-out;
+}
+
 </style>
