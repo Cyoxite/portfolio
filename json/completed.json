@@ -1,17 +1,34 @@
 {
     "0": {
         "name": "Project 0",
-        "gallery": "blue",
+        "photo": {
+            "0":{ "link" : "http://via.placeholder.com/350x150"},
+            "1":{ "link" : "http://via.placeholder.com/350x150"},
+            "2":{ "link" : "http://via.placeholder.com/350x150"}
+        },
         "description": "small"
     },
     "1": {
         "name": "Project 1",
-        "gallery": "red",
+        "photo": {
+            "0":{ "link" : "http://via.placeholder.com/350x150"},
+            "1":{ "link" : "http://via.placeholder.com/350x150"},
+            "2":{ "link" : "http://via.placeholder.com/350x150"},
+            "3":{ "link" : "http://via.placeholder.com/350x150"},
+            "4":{ "link" : "http://via.placeholder.com/350x150"},
+            "5":{ "link" : "http://via.placeholder.com/350x150"},
+            "6":{ "link" : "http://via.placeholder.com/350x150"},
+            "7":{ "link" : "http://via.placeholder.com/350x150"}
+        },
         "description": "medium"
     },
     "2": {
         "name": "Project 2",
-        "gallery": "later",
+        "photo": {
+            "0":{ "link" : "http://via.placeholder.com/350x150"},
+            "1":{ "link" : "http://via.placeholder.com/350x150"},
+            "2":{ "link" : "http://via.placeholder.com/350x150"}
+        },
         "description": "large"
     }
 }
