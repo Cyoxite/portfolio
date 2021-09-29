@@ -2,7 +2,8 @@
     
 
 <div class="completed" v-bind:key="completed.id" >
-<h2> {{completed.name}} <button @click=getbuttontext>{{buttontext}}</button></h2>
+<h2> {{completed.name}} <button @click=getbuttontext>{{buttontext}}</button> </h2>
+<transition name="fade">
         <div class="Show" v-show='!toggle'>
 
             <!-- GALLERY FRAGMENT -->
@@ -43,6 +44,7 @@
         
         </div>
         </div>
+        </transition>
 </div>
 
 </template>
@@ -83,19 +85,18 @@ export default {
 .completed{
     float:left;
     min-width: 100%;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 5px black;
 }
 
 
-.Show{
-    
-    
-  
-}
 .description{
-    
+    margin-top: 5px;
     float:left;
     width: 40%;
-    border: 2px solid white;
+    
 
     
 }
@@ -106,7 +107,7 @@ export default {
     float: left;
 }
 .gallery{
-
+margin-top: 5px;
 display:inline-block;
 width: 55%;
 
@@ -122,6 +123,8 @@ width: 55%;
 .miniature{
     max-height: 22%;
     max-width: 22%;
+    min-height: 15%;
+    min-width: 15%;
     padding-inline: 5px;
 }
 
@@ -141,5 +144,12 @@ width: 55%;
 
 h4{
     position: center;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .4s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>

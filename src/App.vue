@@ -1,5 +1,5 @@
 <template>
-<body>
+
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -7,7 +7,7 @@
     </div>
     <router-view/>
   </div>
-  </body>
+  
 </template>
 
 <style>
@@ -16,12 +16,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: black;
   
 }
 body{
-  background: #e6f4ff;
-  background-image: radial-gradient(circle , #d9edfc, #e6f4ff);
+     background: rgb(22,0,36);
+background: linear-gradient(90deg, rgba(22,0,36,0.6894958667060574) 0%, rgba(148,8,194,0.5942577714679622) 15%, rgba(15,121,143,0.6474790599833684) 100%); 
 }
 
 #nav {
