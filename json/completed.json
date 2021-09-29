@@ -27,7 +27,7 @@
         { "featurenm" : "Vehicle database for easy control date for review and insurance"},
         { "featurenm" : "Search by month, year or typed word "}
         ],
-        "technology": ["PHP8","Mysql","Bootstrap","Javascript"]
+        "technology": ["PHP","Mysql","Bootstrap","Javascript"]
     },
     "1": {
         "name": "Project 1",

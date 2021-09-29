@@ -12,31 +12,35 @@
         </div>
 
             <!-- DESCRIPTION FRAGMENT -->
-        <div class="description">{{completed.description}}</div>
+        <div class="description">
+            <h4>Description</h4>
+            {{completed.description}}
 
             <!-- LIST OF FEATURES FRAGMENT -->
-            <div class="features" >
-                <ol> <h4>Features</h4>
+            <div class="features" ><h4>Features</h4>
+                <ol> 
                 <li v-for="feature in completed.feature"
         :key="feature.featurenm"
                 
                 >{{feature.featurenm}}</li>
                 </ol>
             
-        </div>
+        </div></div>
+
+        
 
              <!-- TECHNOLOGY FRAGMENT -->
-        <div class="technology">Technology
+        <div class="technology"><h4>Technology</h4>
             <ol>
                 <li
                 v-for="technology in completed.technology"
-                :key="technology"
-                >
-                {{technology}}
+                :key="technology">
+                <img :src="'/images/technology/'+technology + '.svg'" width="65" height="65">
                 </li>
             </ol>
 
 
+        
         </div>
         </div>
 </div>
@@ -76,9 +80,66 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.completed{
+    float:left;
+    min-width: 100%;
+}
+
+
+.Show{
+    
+    
+  
+}
+.description{
+    
+    float:left;
+    width: 40%;
+    border: 2px solid white;
+
+    
+}
+
+.features{
+    
+    width: 100%;
+    float: left;
+}
+.gallery{
+
+display:inline-block;
+width: 55%;
+
+}
+
+.technology{
+    float:left;
+    min-width: 100%;
+    margin-bottom: 23px;
+    
+}
+
 .miniature{
-    max-height: 9%;
-    max-width: 9%;
+    max-height: 22%;
+    max-width: 22%;
     padding-inline: 5px;
+}
+
+.features li{
+    font-style: italic;
+    position: relative;
+    padding: 0.1rem;
+    
+
+}
+
+.technology li{
+    display: inline-block;
+    align-content: center;
+    padding-inline: 5px;
+}
+
+h4{
+    position: center;
 }
 </style>
